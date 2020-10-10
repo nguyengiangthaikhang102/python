@@ -1,0 +1,5 @@
+print("Chữ nhật đặc")
+print("* * * * *")
+print("* * * * *")
+print("* * * * *")
+print("* * * * *")
