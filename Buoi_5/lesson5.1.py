@@ -49,20 +49,21 @@ def chanmang(arr):
         if i%2==0:
             chan.append(i)
     return chan
-# def nguyento(arr):
-#     x=0
-#     for e in arr:
-#         e
-#     if x==2:
-#         return True
-#     return False
-# def tongnguyento(arr):
-#     tong=0
-#     for e in arr:
-#         for i in range(1,e+1):
-#             if nguyento(arr[i]):
-#                 tong+=i
-#     return tong
+def nguyento(arr):
+    if arr<2:
+        return False
+    else:
+        for i in range (2,arr):
+            if arr%i==0:
+                return False
+    return True
+def tongnguyento(arr):
+    tong=0
+    for i in arr:
+        if nguyento(i)==True:
+            tong+=i
+    return tong 
+
     
     
 
@@ -83,7 +84,7 @@ print("min:",minmang(arr))
 print("So le trong mang:",lemang(arr))
 print("So chan trong mang:",chanmang(arr))
 
-# print(tongnguyento(arr))
+print("Tong so nguyen to la",tongnguyento(arr))
 
 
 
